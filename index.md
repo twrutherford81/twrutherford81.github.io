@@ -1,25 +1,31 @@
 ---
 layout: default
-title: ePortfolio
+title: Thomas Rutherford
+description: ePortfolio HOME
 ---
-
-# Welcome to My ePortfolio
-
-Hello! My name is Thomas Rutherford. This site showcases my work and learning at SNHU.
 
 ## About Me
 
-I am passionate about computer science and technology. Here you'll find my projects, skills, and achievements.
+Hello, my name is Thomas Rutherford and I am a professional software engineer. I have been writing software for over 15 year and I have a passion for developing programs the make the computer work for you. I received an AS degree in Computer Information Systems shortly after high school and returned to school in 2023 to complete a BS in Computer Science. This site contains detials of the capstone project completed as part of the BS degree. The project entials converting a standalone Java command-line program into a full-stack Windows forms application written in C#.
 
-## Projects
+## Professional Self Assessment
 
-- **States Search:** [StatesSearch](https://github.com/twrutherford81/CS-499-SNHU-Capstone)  
+TODO: fill in content
+
+## Project Details
+
+- **Code Review:**
+  *An informal code review of the java artifact and the planned enhancements*
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/Pdgy-y-IToU" title="States Search code review" frameborder="0" allowfullscreen></iframe>
+
+- **States Search Repository:** [View on GitHub](https://github.com/twrutherford81/CS-499-SNHU-Capstone)  
   *Transformation of a command-line java program to a full-stack C# application*
 
-- **Code Review:** [States Search code review](https://1drv.ms/v/c/31012e72af2e15bc/EVkLjY0WN1FHm-Kci_ZtxhIBJL99EiVk24TgkaipjXNs6g?e=W7w3Qs)  
-  *An informal code review of the java artifact and the planned enhancements*
+- **Course Outcomes:** [Course Outcomes](course-outcomes.html)  
+  *Detailed mapping of work performed to meet course outcomes*
 
 ## Skills
+TODO: fill in content
 
 - Programming: Python, Java, C++
 - Web Development: HTML, CSS, JavaScript
@@ -28,5 +34,3 @@ I am passionate about computer science and technology. Here you'll find my proje
 ## Contact
 
 Connect on [LinkedIn](https://www.linkedin.com/in/twrutherford81).
-
----
