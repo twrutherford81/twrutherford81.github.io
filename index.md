@@ -12,6 +12,13 @@ Hello, my name is Thomas Rutherford and I am a professional software engineer. I
 
 TODO: fill in content
 
+- Discuss how completing your coursework throughout the program and developing the ePortfolio has helped you showcase your strengths, shape your professional goals and values, and prepare to enter or become more employable in the computer science field.
+  - Use specific examples from your program and include examples outside of the artifacts included in your ePortfolio.
+  - Address the following topics: collaborating in a team environment, communicating with stakeholders, data structures and algorithms, software engineering and database, and security. This section should function as an overall introduction to your skills, not a discussion of the artifacts.
+- Summarize and introduce how your artifacts fit together and inform the portfolio as a whole.
+  - This summary will help demonstrate the full range of your computer science talents and abilities.
+  - This section should introduce your audience to the technical artifacts that follow the professional self-assessment.
+
 ## Project Details
 
 - **Code Review:**
@@ -28,7 +35,6 @@ TODO: fill in content
   
   ***Software Design and Engineering***
   - [MainForm.cs](/artifacts/MainForm.cs.html)
-  - [State.cs](/artifacts/State.cs.html)
   - [build.ps1](/artifacts/build.ps1.html)
   - [git_version.ps1](/artifacts/git_version.ps1.html)
   - [dependency_check.ps1](/artifacts/dependency_check.ps1.html)
@@ -39,6 +45,7 @@ TODO: fill in content
 
   ***Databases***
   - [FirebaseLoader.cs](/artifacts/FirebaseLoader.cs.html)
+  - [State.cs](/artifacts/State.cs.html)
   - [FirebaseUploadUitl.py](/artifacts/FirebaseUploadUitl.py.html)<br><br>
 
 - **Course Outcomes:** [Course Outcomes](course-outcomes.html)  

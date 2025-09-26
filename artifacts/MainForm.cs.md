@@ -1,9 +1,16 @@
 ---
 layout: default
-title: Thomas Rutherford
+title: MainForm.cs
 description: MainForm.cs
 back_link: ../index.html
 ---
+## About This File
+Narratives: Provide a narrative to accompany each artifact in your ePortfolio. The narrative that you write for each artifact should explain why you included the artifact in your ePortfolio and reflect on the process you used to create the artifact. The narrative should focus less on the actual creation of the artifact and more on the learning that happened through the creation of the artifact. Address the following items for each artifact:
+- Description
+Briefly describe the artifact. What is it? When was it created?
+-
+Justify the inclusion of the artifact in your ePortfolio. Why did you select this item? What specific components of the artifact showcase your skills and abilities in software development? How did the enhancement improve the artifact? What specific skills did you demonstrate in the enhancement?
+Reflect on the process of enhancing the artifact. What did you learn as you were creating it and improving it? What challenges did you face? How did you incorporate feedback as you made changes to the artifact? How was the artifact improved? Which course outcomes did you partially or fully meet with your enhancements? Which do you feel were not met?
 
 ```cs
 using Google.Protobuf.WellKnownTypes;
@@ -71,7 +78,8 @@ namespace StatesSearch
 
             if (data == null)
             {
-                MessageBox.Show("Failed to load states data, please try again.", "Program Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Failed to load states data, please try again.", "Program Error",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -127,7 +135,8 @@ namespace StatesSearch
                         return;
                     }
 
-                    // Initialize the Boyer-Moore search algorithm with the query (lowercase for case-insensitive search)
+                    // Initialize the Boyer-Moore search algorithm with the query
+                    // (lowercase for case-insensitive search)
                     var boyerMooreSearch = new BoyerMooreSearch(query.ToLowerInvariant());
 
                     // Perform the search on both state names and capitals
