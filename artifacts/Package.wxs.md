@@ -1,10 +1,3 @@
----
-layout: default
-title: Thomas Rutherford
-description: Package.wxs
-back_link: ../index.html
----
-
 ```xml
 <!--Author: Thomas Rutherford. Version: 1.0-->
 <Wix xmlns="http://wixtoolset.org/schemas/v4/wxs"

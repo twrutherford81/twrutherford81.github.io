@@ -1,10 +1,3 @@
----
-layout: default
-title: Thomas Rutherford
-description: BoyerMooreSearch.java
-back_link: ../index.html
----
-
 ```java
 package com.study.cs201.assignmenttwo;
 

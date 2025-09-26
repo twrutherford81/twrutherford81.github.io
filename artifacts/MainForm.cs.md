@@ -1,10 +1,3 @@
----
-layout: default
-title: Thomas Rutherford
-description: MainForm.cs
-back_link: ../index.html
----
-
 ```cs
 using Google.Protobuf.WellKnownTypes;
 using System.ComponentModel;
@@ -71,7 +64,8 @@ namespace StatesSearch
 
             if (data == null)
             {
-                MessageBox.Show("Failed to load states data, please try again.", "Program Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Failed to load states data, please try again.", "Program Error",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -127,7 +121,8 @@ namespace StatesSearch
                         return;
                     }
 
-                    // Initialize the Boyer-Moore search algorithm with the query (lowercase for case-insensitive search)
+                    // Initialize the Boyer-Moore search algorithm with the query
+                    // (lowercase for case-insensitive search)
                     var boyerMooreSearch = new BoyerMooreSearch(query.ToLowerInvariant());
 
                     // Perform the search on both state names and capitals

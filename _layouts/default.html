@@ -32,7 +32,11 @@
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       
       {% if page.back_link %}
-        <a href="{{ page.back_link }}" class="btn btn-back">← Back to Home</a>
+        {% if page.back_link_text %}
+          <a href="{{ page.back_link }}" class="btn btn-back">← {{ page.back_link_text }}</a>
+        {% else %}
+          <a href="{{ page.back_link }}" class="btn btn-back">← Back to Home</a>
+        {% endif %}
       {% endif %}
       
       {% if site.github.is_project_page %}

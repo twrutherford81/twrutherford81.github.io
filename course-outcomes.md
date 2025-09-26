@@ -5,7 +5,7 @@ description: Course Outcomes
 back_link: index.html
 ---
 
-# Course Outcomes - TODO: fill in content
+# Course Outcomes
 
 This page details how my work meets the course outcomes for the SNHU BS in Computer Science capstone. See below for mapping and explanations.
 
@@ -15,6 +15,10 @@ This page details how my work meets the course outcomes for the SNHU BS in Compu
 - Does the student demonstrate the ability to provide contextual, in-code comments that result in easily readable and understandable code?
 - Does the student demonstrate the ability to support decision making for software design stakeholders?
 - Does the student demonstrate the ability to discuss experiences and best practices working in collaborative environments?
+
+- I demonstated the ability to use interaction to create a code review video outline issues with an existing artifact and planned enhancements. The review was presented in a manner suitable for a team environment.
+- I demonstrated the ability to create easily readable code with the use on contextual and in-line comments.
+- I demonstrated the ability to support decision making for software design stakeholders by enhancing and aritifact to include a user interface. Addionally, the project is tracked using git and stored in GitHub with a detailed README file for easy code review and use.
 
 ## Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts
 - Does the student demonstrate the ability to communicate a code review effectively through collaborative environments?

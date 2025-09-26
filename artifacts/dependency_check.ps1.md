@@ -1,10 +1,3 @@
----
-layout: default
-title: Thomas Rutherford
-description: dependency_check.ps1
-back_link: ../index.html
----
-
 ```powershell
 # A powershell script to scan a .NET application for known vulnerabilities.
 #

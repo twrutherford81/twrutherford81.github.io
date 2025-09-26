@@ -12,44 +12,38 @@ Hello, my name is Thomas Rutherford and I am a professional software engineer. I
 
 TODO: fill in content
 
+- Discuss how completing your coursework throughout the program and developing the ePortfolio has helped you showcase your strengths, shape your professional goals and values, and prepare to enter or become more employable in the computer science field.
+  - Use specific examples from your program and include examples outside of the artifacts included in your ePortfolio.
+  - Address the following topics: collaborating in a team environment, communicating with stakeholders, data structures and algorithms, software engineering and database, and security. This section should function as an overall introduction to your skills, not a discussion of the artifacts.
+- Summarize and introduce how your artifacts fit together and inform the portfolio as a whole.
+  - This summary will help demonstrate the full range of your computer science talents and abilities.
+  - This section should introduce your audience to the technical artifacts that follow the professional self-assessment.
+
 ## Project Details
 
-- **Code Review:**
-  *An informal code review of the java artifact and the planned enhancements*
-  <iframe width="700" height="394" src="https://www.youtube.com/embed/Pdgy-y-IToU" title="States Search code review" frameborder="0" allowfullscreen style="margin-bottom:16px;"></iframe>
+- **Code Review:**  
+  *An informal code review of the java artifact and the planned enhancements*<br><br>
+  <div style="text-align: center;">
+    <iframe width="700" height="394" src="https://www.youtube.com/embed/Pdgy-y-IToU" title="States Search code review" frameborder="0" allowfullscreen style="margin-bottom:16px;"></iframe>
+  </div>
 
-- **States Search Repository:** [View on GitHub](https://github.com/twrutherford81/CS-499-SNHU-Capstone)  
-  *Transformation of a command-line java program to a full-stack C# application*
+- **Original Artifact:**  
+  *The original Java command-line program before enhancements*
+  - [BoyerMooreSearch.java](original_artifact.html)<br><br>
 
-- **Original Artifact:**
-  - [BoyerMooreSearch.java](artifacts/BoyerMooreSearch.java.html)<br><br>
+- **Enhancements:**  
+  *Categorical descriptions of the enhancements made to the original artifact*
+  - [***Software Design and Engineering***](software_design_engineering.html)
+  - [***Algorithms and Data Structures***](algorithms_and_data_structures.html)
+  - [***Databases***](databases.html)<br><br>
 
-- **Enhanced Artifacts:**
-  
-  ***Software Design and Engineering***
-  - [MainForm.cs](/artifacts/MainForm.cs.html)
-  - [State.cs](/artifacts/State.cs.html)
-  - [build.ps1](/artifacts/build.ps1.html)
-  - [git_version.ps1](/artifacts/git_version.ps1.html)
-  - [dependency_check.ps1](/artifacts/dependency_check.ps1.html)
-  - [Package.wxs](/artifacts/Package.wxs.html)
-  
-  ***Algorithms and Data Structures***
-  - [BoyerMooreSearch.cs](/artifacts/BoyerMooreSearch.cs.html)
+- **Accomplishments:**  
+*Detailed mapping of work performed to meet course outcomes*
+  - [Course Outcomes](course-outcomes.html)<br><br>
 
-  ***Databases***
-  - [FirebaseLoader.cs](/artifacts/FirebaseLoader.cs.html)
-  - [FirebaseUploadUitl.py](/artifacts/FirebaseUploadUitl.py.html)<br><br>
-
-- **Course Outcomes:** [Course Outcomes](course-outcomes.html)  
-  *Detailed mapping of work performed to meet course outcomes*
-
-## Skills
-TODO: fill in content
-
-- Programming: Python, Java, C++
-- Web Development: HTML, CSS, JavaScript
-- Problem Solving & Critical Thinking
+- **States Search Repository:**  
+  *The full code and documented project history*
+  - [View on GitHub](https://github.com/twrutherford81/CS-499-SNHU-Capstone)  
 
 ## Contact
 

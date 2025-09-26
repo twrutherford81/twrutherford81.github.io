@@ -1,10 +1,3 @@
----
-layout: default
-title: Thomas Rutherford
-description: State.cs
-back_link: ../index.html
----
-
 ```cs
 namespace StatesSearch
 {

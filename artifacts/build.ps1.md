@@ -1,10 +1,3 @@
----
-layout: default
-title: Thomas Rutherford
-description: build.ps1
-back_link: ../index.html
----
-
 ```powershell
 # A powershell script to build a .NET application.
 #
