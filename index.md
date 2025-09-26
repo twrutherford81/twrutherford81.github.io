@@ -16,10 +16,30 @@ TODO: fill in content
 
 - **Code Review:**
   *An informal code review of the java artifact and the planned enhancements*
-  <iframe width="700" height="394" src="https://www.youtube.com/embed/Pdgy-y-IToU" title="States Search code review" frameborder="0" allowfullscreen></iframe>
+  <iframe width="700" height="394" src="https://www.youtube.com/embed/Pdgy-y-IToU" title="States Search code review" frameborder="0" allowfullscreen style="margin-bottom:16px;"></iframe>
 
 - **States Search Repository:** [View on GitHub](https://github.com/twrutherford81/CS-499-SNHU-Capstone)  
   *Transformation of a command-line java program to a full-stack C# application*
+
+- **Original Artifact:**
+  - [BoyerMooreSearch.java](artifacts/BoyerMooreSearch.java.html)<br><br>
+
+- **Enhanced Artifacts:**
+  
+  ***Software Design and Engineering***
+  - [MainForm.cs](/artifacts/MainForm.cs.html)
+  - [State.cs](/artifacts/State.cs.html)
+  - [build.ps1](/artifacts/build.ps1.html)
+  - [git_version.ps1](/artifacts/git_version.ps1.html)
+  - [dependency_check.ps1](/artifacts/dependency_check.ps1.html)
+  - [Package.wxs](/artifacts/Package.wxs.html)
+  
+  ***Algorithms and Data Structures***
+  - [BoyerMooreSearch.cs](/artifacts/BoyerMooreSearch.cs.html)
+
+  ***Databases***
+  - [FirebaseLoader.cs](/artifacts/FirebaseLoader.cs.html)
+  - [FirebaseUploadUitl.py](/artifacts/FirebaseUploadUitl.py.html)<br><br>
 
 - **Course Outcomes:** [Course Outcomes](course-outcomes.html)  
   *Detailed mapping of work performed to meet course outcomes*
