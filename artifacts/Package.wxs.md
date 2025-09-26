@@ -2,6 +2,7 @@
 layout: default
 title: Thomas Rutherford
 description: Package.wxs
+back_link: ../index.html
 ---
 
 ```xml

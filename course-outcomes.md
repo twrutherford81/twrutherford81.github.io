@@ -2,9 +2,8 @@
 layout: default
 title: Thomas Rutherford
 description: Course Outcomes
+back_link: index.html
 ---
-
-[Back to Home](index.html)
 
 # Course Outcomes - TODO: fill in content
 

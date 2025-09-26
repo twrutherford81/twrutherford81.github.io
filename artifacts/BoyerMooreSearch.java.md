@@ -2,6 +2,7 @@
 layout: default
 title: Thomas Rutherford
 description: BoyerMooreSearch.java
+back_link: ../index.html
 ---
 
 ```java

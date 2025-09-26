@@ -2,6 +2,7 @@
 layout: default
 title: Thomas Rutherford
 description: BoyerMooreSearch.cs
+back_link: ../index.html
 ---
 
 ```cs
