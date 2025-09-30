@@ -33,9 +33,9 @@ TODO: fill in content
 
 - **Enhancements:**  
   *Categorical descriptions of the enhancements made to the original artifact*
-  - [***Software Design and Engineering***](cat1_software_design_engineering.html)
-  - [***Algorithms and Data Structures***](cat2_algorithms_and_data_structures.html)
-  - [***Databases***](cat3_databases.html)<br><br>
+  - [Software Design and Engineering](cat1_software_design_engineering.html)
+  - [Algorithms and Data Structures](cat2_algorithms_and_data_structures.html)
+  - [Databases](cat3_databases.html)<br><br>
 
 - **Accomplishments:**  
 *Detailed mapping of work performed to meet course outcomes*
