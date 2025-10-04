@@ -25,10 +25,11 @@ namespace StatesSearch
         /// This file is temporarily stored on the client's PC so that an environment variable can
         /// be set against it. Once Firebase is authenticated, the file is deleted.
         /// </summary>
-        private readonly string LOCAL_FIREBASE_CONFIG_FILE = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, FIREBASE_KEY_FILENAME);
+        private readonly string LOCAL_FIREBASE_CONFIG_FILE = 
+            Path.Combine(AppDomain.CurrentDomain.BaseDirectory, FIREBASE_KEY_FILENAME);
 
         /// <summary>
-        /// Name of the environment variable needed for Firebase authentication.  The variable must be set to the
+        /// Name of the environment variable needed for Firebase authentication. The variable must be set to the
         /// path of the json key file created on the Firebase console.
         /// </summary>
         private const string FIREBASE_AUTH_ENV_VAR = "GOOGLE_APPLICATION_CREDENTIALS";
@@ -56,7 +57,8 @@ namespace StatesSearch
             catch (Exception ex)
             {
                 firestoreDb = null;
-                MessageBox.Show("Failed to establish connection with the database." + Environment.NewLine + Environment.NewLine + ex.Message,
+                MessageBox.Show("Failed to establish connection with the database." + 
+                              Environment.NewLine + Environment.NewLine + ex.Message,
                     "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -92,8 +94,9 @@ namespace StatesSearch
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An error occurred while retrieving data from the database. The default static data will be used instead." +
-                    Environment.NewLine + Environment.NewLine + ex.Message,
+                MessageBox.Show("An error occurred while retrieving data from the database. " +
+                              "The default static data will be used instead." +
+                              Environment.NewLine + Environment.NewLine + ex.Message,
                     "Data Retrieval Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 states = GetDefaultStateList();
             }

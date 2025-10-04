@@ -110,7 +110,10 @@ CURRENT_YEAR=$currentYear
 
 if (Test-Path $oldHeader) {
     # 0 -> no differences, 1 -> differences, 2 -> error
-    if (Compare-Object -ReferenceObject (Get-Content $oldHeader) -DifferenceObject (Get-Content $newHeader) -SyncWindow 0) {
+    if (Compare-Object `
+            -ReferenceObject (Get-Content $oldHeader) `
+            -DifferenceObject (Get-Content $newHeader) `
+            -SyncWindow 0) {
         Copy-Item -Force -Path $oldHeader -Destination $newHeader
     }
     Remove-Item -Force -Path $oldHeader
