@@ -46,8 +46,8 @@ The code contained in this portfolio shows my ability to transform an existing c
 
 - **Code Review:**  
   *An informal code review of the java artifact and the planned enhancements*<br><br>
-  <div style="text-align: center;">
-    <iframe width="700" height="394" src="https://www.youtube.com/embed/Pdgy-y-IToU" title="States Search code review" frameborder="0" allowfullscreen style="margin-bottom:16px;"></iframe>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/Pdgy-y-IToU" title="States Search code review" frameborder="0" allowfullscreen></iframe>
   </div>
 
 - **Original Artifact:**  
