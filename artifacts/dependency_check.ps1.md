@@ -29,7 +29,8 @@ if (Test-Path $secretsPath) {
 }
 
 # Set Java options to reduce warnings and improve performance
-$env:JAVA_OPTS = "-Dorg.apache.lucene.store.MMapDirectory.enableMemorySegments=false --add-modules jdk.incubator.vector"
+$env:JAVA_OPTS = "-Dorg.apache.lucene.store.MMapDirectory.enableMemorySegments=false " + `
+                  "--add-modules jdk.incubator.vector"
 
 Write-Host ""
 Write-Host "[INFO] Running OWASP Dependency-Check..."

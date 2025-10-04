@@ -118,7 +118,9 @@ if __name__ == "__main__":
     This is the main entry point for the script.
     Run this script from the command line to upload data from a CSV file.
     Usage example:
-    python FirebaseUploadUtil.py --svc_account path/to/serviceAccount.json --csv_file path/to/data.csv --collection my_collection
+    python FirebaseUploadUtil.py --svc_account path/to/serviceAccount.json \
+                                 --csv_file path/to/data.csv \
+                                 --collection my_collection
     """
     args = parse_args()
     db = initialize_firebase(args.svc_account)

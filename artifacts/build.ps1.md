@@ -124,7 +124,13 @@ if ($Build) {
 
             # Build the MSI
             Write-Output "Building $configuration $platform"
-            dotnet msbuild $MSI_PROJECT_FILE -p:Configuration=$configuration -p:Platform=$platform -p:Version=$GIT_TAG_STRING -p:AssemblyVersion=$GIT_TAG_STRING -p:FileVersion=$GIT_TAG_STRING -Restore -v:n
+            dotnet msbuild $MSI_PROJECT_FILE `
+                -p:Configuration=$configuration `
+                -p:Platform=$platform `
+                -p:Version=$GIT_TAG_STRING `
+                -p:AssemblyVersion=$GIT_TAG_STRING `
+                -p:FileVersion=$GIT_TAG_STRING `
+                -Restore -v:n
 
             if ($LASTEXITCODE -ne 0) {
                 Write-Output "[ERROR]: Failed to build the $configuration $platform MSI"
@@ -133,7 +139,10 @@ if ($Build) {
             }
 
             # Find the MSI
-            $OUT_DIR = "$MSI_PROJECT_DIR\" + $(dotnet msbuild $MSI_PROJECT_FILE -p:Configuration=$configuration -p:Platform=$platform -Restore -v:n -getProperty:OutputPath)
+            $OUT_DIR = "$MSI_PROJECT_DIR\" + $(dotnet msbuild $MSI_PROJECT_FILE `
+                -p:Configuration=$configuration `
+                -p:Platform=$platform `
+                -Restore -v:n -getProperty:OutputPath)
             $MSI = Get-ChildItem -Path $OUT_DIR -Filter "*.msi" -Recurse
 
             if (-not $MSI) {
@@ -156,7 +165,9 @@ if ($Build) {
     Write-Output "Generating checksums..."
     Set-Location $BUILD_DIR
     # Split-Path is used to get the filename from the path
-    Get-ChildItem -Filter *.msi -File | Get-FileHash -Algorithm MD5 | ForEach-Object { "$($_.Hash) " + $(Split-Path -Path $_.Path -Leaf) } | Out-File -FilePath $CHECKSUM_FILE
+    Get-ChildItem -Filter *.msi -File | Get-FileHash -Algorithm MD5 | ForEach-Object { 
+        "$($_.Hash) " + $(Split-Path -Path $_.Path -Leaf) 
+    } | Out-File -FilePath $CHECKSUM_FILE
     Write-Output "Done`n"
 
     # Move the version file and buildenv file into the builds directory

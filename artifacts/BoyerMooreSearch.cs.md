@@ -36,7 +36,8 @@ namespace StatesSearch
         /// Creates a new instance of the <see cref="BoyerMooreSearch"/> class and initializes it
         /// with the specified search pattern.
         /// </summary>
-        /// <param name="pattern">The pattern to search for. This value cannot be <see langword="null"/> or empty.</param>
+        /// <param name="pattern">The pattern to search for. This value cannot be 
+        /// <see langword="null"/> or empty.</param>
         public BoyerMooreSearch(string pattern)
         {
             if (string.IsNullOrEmpty(pattern))
@@ -54,7 +55,8 @@ namespace StatesSearch
         /// <summary>
         /// Builds the bad character table for the Boyer-Moore string search algorithm.
         /// </summary>
-        /// <returns>An int[] array <see cref="NUM_ASCII_CHARS"/> long representing the bad character shift</returns>
+        /// <returns>An int[] array <see cref="NUM_ASCII_CHARS"/> long representing the bad 
+        /// character shift</returns>
         private int[] BuildBadCharTable()
         {
             var table = Enumerable.Repeat(patternLength, NUM_ASCII_CHARS).ToArray();
@@ -68,8 +70,8 @@ namespace StatesSearch
         /// The good suffix table is used to determine how far the search window can be shifted
         /// when a mismatch occurs during pattern matching based on the good suffix heuristic.
         /// </summary>
-        /// <returns>An array of integers representing the good suffix shift values for each position in the pattern. The array
-        /// length is equal to the length of the pattern.</returns>
+        /// <returns>An array of integers representing the good suffix shift values for each position in 
+        /// the pattern. The array length is equal to the length of the pattern.</returns>
         private int[] BuildGoodSuffixTable()
         {
             // Array to hold the shift values for the good suffix heuristic
@@ -86,7 +88,8 @@ namespace StatesSearch
             // Loop to calculates border positions and initial good suffix shift values
             while (patternIndex > 0)
             {
-                while (borderIndex <= patternLength && pattern[patternIndex - 1] != pattern[borderIndex - 1])
+                while (borderIndex <= patternLength && 
+                       pattern[patternIndex - 1] != pattern[borderIndex - 1])
                 {
                     goodSuffixTable[borderIndex - 1] = borderIndex - patternIndex;
                     borderIndex = borderPositions[borderIndex];
@@ -112,12 +115,15 @@ namespace StatesSearch
         /// Searches for the first occurrence of the pattern (case-insensitive) in the specified text and
         /// returns its starting index. The pattern is expected to be defined when this class is created.
         /// </summary>
-        /// <param name="text">The text in which to search for the pattern. This value cannot be <see langword="null"/> or empty.</param>
-        /// <returns>The zero-based index of the first occurrence of the pattern in the text, or -1 if the pattern is not found.</returns>
+        /// <param name="text">The text in which to search for the pattern. This value cannot be 
+        /// <see langword="null"/> or empty.</param>
+        /// <returns>The zero-based index of the first occurrence of the pattern in the text, or -1 if the 
+        /// pattern is not found.</returns>
         public int Search(string text)
         {
             if (string.IsNullOrEmpty(text))
-                throw new ArgumentException("Search text cannot be null or empty.", nameof(text));
+                throw new ArgumentException("Search text cannot be null or empty.", 
+                                          nameof(text));
 
             // Convert the text to lower case for case-insensitive search
             text = text.Trim().ToLower();
@@ -131,7 +137,8 @@ namespace StatesSearch
                 int patternIndex = patternLength - 1;
 
                 // Compare pattern from end to start
-                while (patternIndex >= 0 && pattern[patternIndex] == text[textIndex + patternIndex])
+                while (patternIndex >= 0 && 
+                       pattern[patternIndex] == text[textIndex + patternIndex])
                 {
                     patternIndex--;
                 }
@@ -141,7 +148,8 @@ namespace StatesSearch
                     return textIndex;
 
                 // Shift the search window using the maximum of good suffix and bad character heuristics
-                textIndex += Math.Max(goodSuffix[patternIndex], badChar[(byte)text[textIndex + patternIndex]]);
+                textIndex += Math.Max(goodSuffix[patternIndex], 
+                                    badChar[(byte)text[textIndex + patternIndex]]);
             }
 
             // Pattern not found

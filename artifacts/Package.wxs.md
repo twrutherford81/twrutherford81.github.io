@@ -29,7 +29,8 @@
 		<!--Set the icon and descriptionshown in the Windows programs list-->
 		<Icon Id="AppIcon.exe" SourceFile="StatesSearch.exe"/>
 		<Property Id="ARPPRODUCTICON" Value="AppIcon.exe" />
-		<Property Id="AppDescription" Value="Application to search US state data using a Boyer Moore search algorithm" />
+		<Property Id="AppDescription" Value="Application to search US state data using a
+		                                     Boyer Moore search algorithm" />
 
 		<UI>
 			<!--Setup the UI allowing the user to selecte the install directory -->
@@ -60,7 +61,8 @@
 		<Property Id="WIXUI_EXITDIALOGOPTIONALCHECKBOX" Value="1" />
 		<Property Id="WIXUI_EXITDIALOGOPTIONALCHECKBOXTEXT" Value="Launch States Search App" />
 		<Property Id="WixShellExecTarget" Value="[#StatesSearchOutput]" />
-		<CustomAction Id="LaunchApplication" BinaryRef="Wix4UtilCA_$(sys.BUILDARCHSHORT)" DllEntry="WixShellExec" Impersonate="yes" />
+		<CustomAction Id="LaunchApplication" BinaryRef="Wix4UtilCA_$(sys.BUILDARCHSHORT)"
+		              DllEntry="WixShellExec" Impersonate="yes" />
 	</Package>
 </Wix>
 ```
