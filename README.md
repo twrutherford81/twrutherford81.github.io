@@ -1,5 +1,8 @@
-# twrutherford81.github.io
-CS-499 ePortfolio
+# CS-499 Capstone ePortfolio
+This repository contains the source files for my CS-499 Capstone ePortfolio, built using Jekyll for viewing in GitHub Pages.
+
+## View Online
+The ePortfolio is hosted using GitHub Pages and can be viewed online at: [twrutherford81.github.io](https://twrutherford81.github.io)  
 
 ## Running Locally
 
