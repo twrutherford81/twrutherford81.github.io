@@ -6,7 +6,14 @@ description: ePortfolio HOME
 
 ## About Me
 
-Hello, and welcome to my ePortfolio. My name is Tom and I have been working as a software engineer for over 15 years. I have a passion for developing programs the make the computer work for people. I received an AS degree in Computer Information Systems shortly after high school and returned to school in 2023 to complete a BS in Computer Science. This site contains detials of the capstone project completed as part of the BS degree.
+<div class="about-intro">
+  <img src="/assets/images/headshot.png" alt="Headshot of Thomas Rutherford" class="headshot" />
+  <div class="about-text">
+    <div class="about-name">Thomas Rutherford</div>
+    <div class="about-title">Software Engineer</div>
+  </div>
+</div>
+Hello, and welcome to my ePortfolio. My name is Tom and I have been working as a software engineer for over 15 years. I have a passion for developing programs that make the computer work for people. I received an AS degree in Computer Information Systems shortly after high school and returned to school in 2023 to complete a BS in Computer Science. This site contains details of the capstone project completed as part of the BS degree.
 
 ## Professional Self Assessment
 
