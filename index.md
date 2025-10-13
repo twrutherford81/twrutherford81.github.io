@@ -64,9 +64,10 @@ The code contained in this portfolio shows my ability to transform an existing c
 *Detailed mapping of work performed to meet course outcomes*
   - [Course Outcomes](course-outcomes.html)<br><br>
 
-- **States Search Repository:**  
+<!-- Uncomment the following section to include the States Search Repository link -->
+<!-- - **States Search Repository:**  
   *The full code and documented project history*
-  - [View on GitHub](https://github.com/twrutherford81/CS-499-SNHU-Capstone)  
+  - [View on GitHub](https://github.com/twrutherford81/CS-499-SNHU-Capstone)   -->
 
 ## Contact
 
